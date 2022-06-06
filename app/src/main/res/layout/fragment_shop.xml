@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:overScrollMode="never"
+    tools:context=".fragments.main.ShopFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/toolbar_layout"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/_48sdp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:id="@+id/top_logo_image"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/_24sdp"
+                android:adjustViewBounds="true"
+                android:contentDescription="@null"
+                android:src="@drawable/ic_text_logo"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <TextView
+            android:id="@+id/title_text_view"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/_32sdp"
+            android:background="@color/colorBlack"
+            android:fontFamily="@font/ubuntu_regular"
+            android:gravity="center"
+            android:text="@string/title_shop"
+            android:textAllCaps="true"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/_14ssp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/toolbar_layout" />
+
+        <TextView
+            android:id="@+id/top_subtitle_text"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_48sdp"
+            android:layout_marginTop="@dimen/_8sdp"
+            android:layout_marginEnd="@dimen/_48sdp"
+            android:fontFamily="@font/ubuntu_regular"
+            android:gravity="center"
+            android:lineSpacingExtra="@dimen/_2sdp"
+            android:text="@string/shop_subtitle_text"
+            android:textSize="@dimen/_10ssp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/title_text_view" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/shop_category_input"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense.ExposedDropdownMenu"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_8sdp"
+            android:layout_marginTop="@dimen/_8sdp"
+            android:layout_marginEnd="@dimen/_6sdp"
+            app:boxCornerRadiusBottomEnd="0dp"
+            app:boxCornerRadiusBottomStart="0dp"
+            app:boxCornerRadiusTopEnd="0dp"
+            app:boxCornerRadiusTopStart="0dp"
+            app:boxStrokeWidth="@dimen/_1sdp"
+            app:boxStrokeWidthFocused="@dimen/_1sdp"
+            app:hintEnabled="false"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/top_subtitle_text"
+            app:layout_constraintWidth_percent="0.5">
+
+            <com.google.android.material.textfield.MaterialAutoCompleteTextView
+                android:id="@+id/shop_category_edit"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_40sdp"
+                android:fontFamily="@font/ubuntu_regular"
+                android:hint="@string/category_hint"
+                android:inputType="none"
+                android:textSize="@dimen/_10ssp" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/shop_recycler_view"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_16sdp"
+            android:overScrollMode="never"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHeight_min="@dimen/_320sdp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/shop_category_input"
+            tools:listitem="@layout/layout_item_shop" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.core.widget.NestedScrollView>

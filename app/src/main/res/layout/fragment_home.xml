@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/homelayout"
+    tools:context=".fragments.main.HomeFragment">
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/nestedscroll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="@dimen/_50sdp"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        android:overScrollMode="never">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+           >
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/toolbar_layout"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/_48sdp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <ImageView
+                    android:id="@+id/top_logo_image"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/_24sdp"
+                    android:adjustViewBounds="true"
+                    android:contentDescription="@null"
+                    android:src="@drawable/ic_text_logo"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <TextView
+                android:id="@+id/top_subtitle_text"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_48sdp"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:layout_marginEnd="@dimen/_48sdp"
+                android:fontFamily="@font/ubuntu_regular"
+                android:gravity="center"
+                android:lineSpacingExtra="@dimen/_2sdp"
+                android:text="@string/home_subtitle_text"
+                android:textSize="@dimen/_10ssp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/toolbar_layout" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/home_recycler_view"
+                android:layout_width="0dp"
+                android:nestedScrollingEnabled="false"
+                app:layout_behavior="@string/appbar_scrolling_view_behavior"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_16sdp"
+                android:overScrollMode="never"
+
+                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHeight_min="@dimen/_320sdp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/top_subtitle_text"
+                tools:listitem="@layout/layout_item_home" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </androidx.core.widget.NestedScrollView>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/add_new_record_button"
+        style="@style/Widget.MaterialComponents.Button.UnelevatedButton"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_44sdp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="@dimen/_8sdp"
+        android:layout_marginEnd="@dimen/_8sdp"
+        android:layout_marginBottom="@dimen/_10sdp"
+        android:fontFamily="@font/ubuntu_medium"
+        android:insetTop="0dp"
+        android:insetBottom="0dp"
+        android:text="@string/title_add_new_vehicle"
+        android:textSize="@dimen/_14ssp"
+        app:cornerRadius="0dp" />
+
+</RelativeLayout>

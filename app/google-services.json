@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "889610974129",
+    "project_id": "vmrapp-47b55",
+    "storage_bucket": "vmrapp-47b55.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:889610974129:android:aac0b1516ff2a88d034390",
+        "android_client_info": {
+          "package_name": "com.developers.vmrapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "889610974129-8gp5fdttte2h4sbkpeqrv3856pm78g7f.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCEHKZ6lR-u7FPZpL95kVolpVoFdjXsRkQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "889610974129-8gp5fdttte2h4sbkpeqrv3856pm78g7f.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

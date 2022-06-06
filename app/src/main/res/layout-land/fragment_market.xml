@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.main.MarketFragment">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:overScrollMode="never">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/toolbar_layout"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/_48sdp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <ImageView
+                    android:id="@+id/top_logo_image"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/_24sdp"
+                    android:adjustViewBounds="true"
+                    android:contentDescription="@null"
+                    android:src="@drawable/ic_text_logo"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <TextView
+                android:id="@+id/title_text_view"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/_32sdp"
+                android:background="@color/colorBlack"
+                android:fontFamily="@font/ubuntu_regular"
+                android:gravity="center"
+                android:text="@string/title_market"
+                android:textAllCaps="true"
+                android:textColor="@color/colorWhite"
+                android:textSize="@dimen/_14ssp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/toolbar_layout" />
+
+            <TextView
+                android:id="@+id/top_subtitle_text"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_48sdp"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:layout_marginEnd="@dimen/_48sdp"
+                android:fontFamily="@font/ubuntu_regular"
+                android:gravity="center"
+                android:lineSpacingExtra="@dimen/_2sdp"
+                android:text="@string/market_subtitle_text"
+                android:textSize="@dimen/_10ssp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/title_text_view" />
+
+
+
+                <com.google.android.material.textfield.MaterialAutoCompleteTextView
+                    android:id="@+id/market_category_edit"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_40sdp"
+                    android:fontFamily="@font/ubuntu_regular"
+                    android:hint="@string/category_hint"
+                    android:textColorHint="#B1B0B0"
+                    android:drawableLeft="@drawable/search"
+                    android:drawablePadding="@dimen/_10sdp"
+                    android:layout_margin="@dimen/_8sdp"
+                    android:background="@drawable/button2"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/top_subtitle_text"
+                    android:textSize="@dimen/_15ssp" />
+
+
+            <!-- Padding Bottom to Recycler View for Button -->
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/market_recycler_view"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:clipToPadding="false"
+                android:overScrollMode="never"
+                android:paddingStart="@dimen/_8sdp"
+                android:paddingEnd="0dp"
+                android:paddingBottom="@dimen/_56sdp"
+                app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHeight_min="@dimen/_320sdp"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/market_category_edit"
+                app:spanCount="2"
+                tools:listitem="@layout/layout_item_market" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/add_new_button"
+        style="@style/Widget.MaterialComponents.Button.UnelevatedButton"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_44sdp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="@dimen/_8sdp"
+        android:layout_marginEnd="@dimen/_8sdp"
+        android:layout_marginBottom="@dimen/_12sdp"
+        android:fontFamily="@font/ubuntu_medium"
+        android:insetTop="0dp"
+        android:insetBottom="0dp"
+        android:text="@string/add_new_text"
+        android:textSize="@dimen/_14ssp"
+        app:cornerRadius="0dp" />
+
+</RelativeLayout>

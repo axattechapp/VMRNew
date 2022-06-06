@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@id/navigation_home">
+
+    <fragment
+        android:id="@+id/navigation_home"
+        android:name="com.developers.vmrapp.fragments.main.HomeFragment"
+        android:label="@string/title_home"
+        tools:layout="@layout/fragment_home">
+
+        <action
+            android:id="@+id/action_navigation_home_to_navigation_view_vehicle"
+            app:destination="@id/navigation_view_vehicle" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_shop"
+        android:name="com.developers.vmrapp.fragments.main.ShopFragment"
+        android:label="@string/title_shop"
+        tools:layout="@layout/fragment_shop">
+        <action
+            android:id="@+id/action_navigation_shop_to_navigation_view_shop"
+            app:destination="@id/navigation_view_shop" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_market"
+        android:name="com.developers.vmrapp.fragments.main.MarketFragment"
+        android:label="@string/title_market"
+        tools:layout="@layout/fragment_market">
+
+        <action
+            android:id="@+id/action_navigation_market_to_navigation_add_market"
+            app:destination="@id/navigation_add_market" />
+        <action
+            android:id="@+id/action_navigation_market_to_navigation_view_market"
+            app:destination="@id/navigation_view_market" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_setting"
+        android:name="com.developers.vmrapp.fragments.main.SettingsFragment"
+        android:label="@string/title_settings"
+        tools:layout="@layout/fragment_settings">
+
+        <action
+            android:id="@+id/action_navigation_setting_to_navigation_privacy"
+            app:destination="@id/navigation_privacy" />
+
+        <action
+            android:id="@+id/action_navigation_setting_to_navigation_terms"
+            app:destination="@id/navigation_terms" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_profile"
+        android:name="com.developers.vmrapp.fragments.main.ProfileFragment"
+        android:label="@string/title_profile"
+        tools:layout="@layout/fragment_profile" />
+
+    <fragment
+        android:id="@+id/navigation_privacy"
+        android:name="com.developers.vmrapp.fragments.privacy.PrivacyFragment"
+        android:label="@string/title_privacy"
+        tools:layout="@layout/fragment_privacy" />
+
+    <fragment
+        android:id="@+id/navigation_terms"
+        android:name="com.developers.vmrapp.fragments.privacy.TermsFragment"
+        android:label="@string/title_terms"
+        tools:layout="@layout/fragment_terms" />
+
+
+    <fragment
+        android:id="@+id/navigation_add_market"
+        android:name="com.developers.vmrapp.fragments.market.AddItemFragment"
+        android:label="@string/title_add_item"
+        tools:layout="@layout/fragment_add_item" />
+
+    <fragment
+        android:id="@+id/navigation_view_vehicle"
+        android:name="com.developers.vmrapp.fragments.vehicle.ViewVehicleFragment"
+        android:label="@string/title_view_vehicle"
+        tools:layout="@layout/fragment_view_vehicle">
+        <action
+            android:id="@+id/action_navigation_view_vehicle_to_navigation_add_record"
+            app:destination="@id/navigation_add_record" />
+        <action
+            android:id="@+id/action_navigation_view_vehicle_to_viewMaintenanceRecordFragment2"
+            app:destination="@id/viewMaintenanceRecordFragment2" />
+        <action
+            android:id="@+id/action_navigation_view_vehicle_to_viewLogBookServiceRecordFragment2"
+            app:destination="@id/viewLogBookServiceRecordFragment2" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_add_record"
+        android:name="com.developers.vmrapp.fragments.vehicle.AddRecordFragment"
+        android:label="@string/title_add_new_record"
+        tools:layout="@layout/fragment_add_record">
+        <action
+            android:id="@+id/action_navigation_add_record_to_navigation_add_maintenance"
+            app:destination="@id/navigation_add_maintenance" />
+        <action
+            android:id="@+id/action_navigation_add_record_to_navigation_update_logbook"
+            app:destination="@id/navigation_update_logbook" />
+        <action
+            android:id="@+id/action_navigation_add_record_to_navigation_add_service"
+            app:destination="@id/navigation_add_service" />
+        <action
+            android:id="@+id/action_navigation_add_record_to_navigation_transfer_vehicle"
+            app:destination="@id/navigation_transfer_vehicle" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_add_maintenance"
+        android:name="com.developers.vmrapp.fragments.vehicle.AddMaintenanceFragment"
+        android:label="@string/add_maintenance_text"
+        tools:layout="@layout/fragment_add_maintenance" />
+
+    <fragment
+        android:id="@+id/navigation_update_logbook"
+        android:name="com.developers.vmrapp.fragments.vehicle.UpdateLogbookFragment"
+        android:label="@string/update_logbook_text"
+        tools:layout="@layout/fragment_update_logbook" />
+
+    <fragment
+        android:id="@+id/navigation_add_service"
+        android:name="com.developers.vmrapp.fragments.vehicle.AddServiceFragment"
+        android:label="@string/add_service_text"
+        tools:layout="@layout/fragment_add_service" />
+
+    <fragment
+        android:id="@+id/navigation_transfer_vehicle"
+        android:name="com.developers.vmrapp.fragments.vehicle.TransferVehicleFragment"
+        android:label="@string/transfer_vehicle_text"
+        tools:layout="@layout/fragment_transfer_vehicle" />
+
+    <fragment
+        android:id="@+id/navigation_view_shop"
+        android:name="com.developers.vmrapp.fragments.shops.ViewShopFragment"
+        android:label="@string/title_view_shop"
+        tools:layout="@layout/fragment_view_shop" />
+
+    <fragment
+        android:id="@+id/navigation_view_market"
+        android:name="com.developers.vmrapp.fragments.market.ViewItemFragment"
+        android:label="@string/title_view_item"
+        tools:layout="@layout/fragment_view_item" />
+    <fragment
+        android:id="@+id/viewLogBookServiceRecordFragment2"
+        android:name="com.developers.vmrapp.fragments.vehicle.ViewHistory.ViewLogBookServiceRecordFragment"
+        android:label="ViewLogBookServiceRecordFragment" />
+    <fragment
+        android:id="@+id/viewMaintenanceRecordFragment2"
+        android:name="com.developers.vmrapp.fragments.vehicle.ViewHistory.ViewMaintenanceRecordFragment"
+        android:label="ViewMaintenanceRecordFragment" />
+
+</navigation>

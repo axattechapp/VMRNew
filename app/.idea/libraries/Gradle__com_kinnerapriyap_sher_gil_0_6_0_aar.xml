@@ -1,0 +1,15 @@
+<component name="libraryTable">
+  <library name="Gradle: com.kinnerapriyap:sher-gil:0.6.0@aar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/1c4285b22598b72fea96f21f8bdc5b11/jetified-sher-gil-0.6.0/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/1c4285b22598b72fea96f21f8bdc5b11/jetified-sher-gil-0.6.0/AndroidManifest.xml" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/1c4285b22598b72fea96f21f8bdc5b11/jetified-sher-gil-0.6.0/res" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.kinnerapriyap/sher-gil/0.6.0/bc896af4c32142fba0c7cf5c8a72e5dfb18be287/sher-gil-0.6.0-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.kinnerapriyap/sher-gil/0.6.0/26479406437faa574216647ee72f5ef01ce9e96a/sher-gil-0.6.0-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

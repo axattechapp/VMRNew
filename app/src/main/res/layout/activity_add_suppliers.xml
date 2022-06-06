@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+    <androidx.core.widget.NestedScrollView
+    tools:context=".activities.vehicle.AddSuppliersActivity"
+    android:overScrollMode="never"
+    android:fillViewport="true"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_height="match_parent"
+        android:layout_width="match_parent">
+
+    <ImageView android:layout_height="@dimen/_24sdp"
+        android:layout_width="@dimen/_24sdp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:src="@drawable/ic_back_button"
+        android:padding="@dimen/_2sdp"
+        android:contentDescription="@null"
+        android:layout_marginTop="@dimen/_12sdp"
+        android:layout_marginStart="@dimen/_12sdp"
+        android:id="@+id/back_button"/>
+
+    <ImageView android:layout_height="@dimen/_140sdp"
+        android:layout_width="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:src="@drawable/ic_splash_logo"
+        android:contentDescription="@null"
+        android:layout_marginTop="@dimen/_24sdp"
+        android:id="@+id/logo_image"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:adjustViewBounds="true"/>
+
+    <TextView android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="@dimen/_16sdp"
+        android:id="@+id/title_one_text_view"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintVertical_chainStyle="packed"
+        app:layout_constraintVertical_bias="1.0"
+        app:layout_constraintTop_toBottomOf="@+id/logo_image" app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintBottom_toTopOf="@+id/subtitle_one_text_view" android:textSize="@dimen/_14ssp"
+        android:textColor="@color/colorBlack"
+        android:textAllCaps="true"
+        android:text="@string/add_vehicle_supplier_title"
+        android:fontFamily="@font/ubuntu_medium"
+        android:layout_marginBottom="@dimen/_6sdp"/>
+
+    <TextView android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        android:id="@+id/subtitle_one_text_view"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/title_one_text_view"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintBottom_toTopOf="@+id/vehicle_supplier_input" android:textSize="@dimen/_10ssp"
+        android:text="@string/add_vehicle_supplier_subtitle"
+        android:fontFamily="@font/ubuntu_regular"
+        android:layout_marginBottom="@dimen/_16sdp"/>
+
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="@dimen/_6sdp"
+            android:id="@+id/vehicle_supplier_input"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toTopOf="@id/vehicle_contact_input"
+            android:layout_marginBottom="@dimen/_4sdp"
+            app:hintEnabled="false"
+            app:errorTextAppearance="@style/ErrorText"
+            app:errorIconTint="@color/colorRed"
+            app:errorEnabled="true"
+            app:boxStrokeWidthFocused="@dimen/_1sdp"
+            app:boxStrokeWidth="@dimen/_1sdp"
+            app:boxStrokeColor="@drawable/ic_input_box"
+            app:boxCornerRadiusTopStart="0dp"
+            app:boxCornerRadiusTopEnd="0dp"
+            app:boxCornerRadiusBottomStart="0dp"
+            app:boxCornerRadiusBottomEnd="0dp"
+            android:layout_marginEnd="@dimen/_6sdp"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense">
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:layout_height="@dimen/_48sdp"
+        android:layout_width="match_parent"
+        android:id="@+id/vehicle_supplier_edit"
+        android:textSize="@dimen/_12ssp"
+        android:fontFamily="@font/ubuntu_regular"
+        android:inputType="text"
+        android:hint="@string/vehicle_supplier_hint"/>
+
+</com.google.android.material.textfield.TextInputLayout>
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_height="wrap_content"
+        android:layout_width="0dp"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginStart="@dimen/_6sdp"
+        android:id="@+id/vehicle_contact_input"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/title_two_text_view"
+        android:layout_marginBottom="@dimen/_4sdp"
+        app:hintEnabled="false"
+        app:errorTextAppearance="@style/ErrorText"
+        app:errorIconTint="@color/colorRed"
+        app:errorEnabled="true"
+        app:boxStrokeWidthFocused="@dimen/_1sdp"
+        app:boxStrokeWidth="@dimen/_1sdp"
+        app:boxStrokeColor="@drawable/ic_input_box"
+        app:boxCornerRadiusTopStart="0dp"
+        app:boxCornerRadiusTopEnd="0dp"
+        app:boxCornerRadiusBottomStart="0dp"
+        app:boxCornerRadiusBottomEnd="0dp"
+        android:layout_marginEnd="@dimen/_6sdp"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense">
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:layout_height="@dimen/_48sdp"
+        android:layout_width="match_parent"
+        android:id="@+id/vehicle_contact_edit"
+        android:textSize="@dimen/_12ssp"
+        android:fontFamily="@font/ubuntu_regular" android:inputType="number" android:hint="@string/vehicle_contact_hint"/>
+
+</com.google.android.material.textfield.TextInputLayout>
+
+    <TextView android:layout_height="wrap_content" android:layout_width="wrap_content" app:layout_constraintStart_toStartOf="parent" android:layout_marginTop="@dimen/_16sdp" android:id="@+id/title_two_text_view" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintBottom_toTopOf="@id/subtitle_two_text_view" android:textSize="@dimen/_14ssp" android:textColor="@color/colorBlack" android:textAllCaps="true" android:text="@string/add_vehicle_service_title" android:fontFamily="@font/ubuntu_medium" android:layout_marginBottom="@dimen/_6sdp"/>
+
+    <TextView android:layout_height="wrap_content" android:layout_width="wrap_content" app:layout_constraintStart_toStartOf="parent" android:layout_marginTop="@dimen/_16sdp" android:id="@+id/subtitle_two_text_view" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintBottom_toTopOf="@id/vehicle_servicekm_input" android:textSize="@dimen/_10ssp" android:text="@string/add_vehicle_supplier_subtitle" android:fontFamily="@font/ubuntu_regular" android:layout_marginBottom="@dimen/_16sdp"/>
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_height="wrap_content"
+        android:layout_width="0dp"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginStart="@dimen/_6sdp"
+        android:id="@+id/vehicle_servicekm_input"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/vehicle_service_edit" android:layout_marginBottom="@dimen/_4sdp" app:hintEnabled="false" app:errorTextAppearance="@style/ErrorText" app:errorIconTint="@color/colorRed" app:errorEnabled="true" app:boxStrokeWidthFocused="@dimen/_1sdp" app:boxStrokeWidth="@dimen/_1sdp" app:boxStrokeColor="@drawable/ic_input_box" app:boxCornerRadiusTopStart="0dp" app:boxCornerRadiusTopEnd="0dp" app:boxCornerRadiusBottomStart="0dp" app:boxCornerRadiusBottomEnd="0dp" android:layout_marginEnd="@dimen/_6sdp" style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense">
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:layout_height="@dimen/_48sdp"
+        android:layout_width="match_parent"
+        android:id="@+id/vehicle_servicekm_edit"
+        android:textSize="@dimen/_12ssp"
+        android:fontFamily="@font/ubuntu_regular"
+        android:inputType="number"
+        android:hint="Service Kms"/>
+
+</com.google.android.material.textfield.TextInputLayout>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:layout_height="@dimen/_48sdp"
+        android:layout_width="match_parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:padding="@dimen/_15sdp"
+        android:layout_marginStart="@dimen/_6sdp"
+        android:id="@+id/vehicle_service_edit"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/finish_button" android:textSize="@dimen/_12ssp" android:textColor="@color/colorGray" android:text="@string/service_hint" android:fontFamily="@font/ubuntu_regular" android:layout_marginBottom="@dimen/_15sdp" android:layout_marginEnd="@dimen/_6sdp" android:gravity="center_vertical" android:background="@drawable/timedatebg"/>
+
+    <com.google.android.material.button.MaterialButton
+        android:layout_height="@dimen/_44sdp"
+        android:layout_width="0dp"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginStart="@dimen/_6sdp"
+        android:id="@+id/finish_button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/copyright_text" android:textSize="@dimen/_14ssp" android:text="@string/finish_text" android:fontFamily="@font/ubuntu_medium" android:layout_marginBottom="@dimen/_12sdp" android:layout_marginEnd="@dimen/_6sdp" style="@style/Widget.MaterialComponents.Button.UnelevatedButton" app:cornerRadius="0dp" android:insetBottom="0dp" android:insetTop="0dp"/>
+
+    <TextView android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        android:id="@+id/copyright_text"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:textSize="@dimen/_10ssp"
+        android:text="@string/copyright_text"
+        android:fontFamily="@font/ubuntu_regular"
+        android:layout_marginBottom="@dimen/_8sdp"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.core.widget.NestedScrollView>

@@ -1,0 +1,145 @@
+<resources>
+
+    <string name="app_name">VMR App</string>
+
+    <string name="no_text">No</string>
+    <string name="yes_text">Yes</string>
+    <string name="qqi_text">QQI</string>
+    <string name="next_text">Next</string>
+    <string name="view_text">View</string>
+    <string name="email_text">Email</string>
+    <string name="login_text">Sign In</string>
+    <string name="logout_text">Logout</string>
+    <string name="finish_text">Finish</string>
+    <string name="add_new_text">Add New</string>
+    <string name="register_text">Sign Up</string>
+    <string name="reminders_text">Reminders</string>
+    <string name="edit_profile_text">Edit Profile</string>
+    <string name="next_service_text">Next Service</string>
+    <string name="notification_text">Push Notifications</string>
+
+    <string name="copyright_text">Copyright 2021 VMR App</string>
+
+    <string name="signup_email_text">Sign Up With Email</string>
+    <string name="login_facebook_text">Sign In With Facebook</string>
+    <string name="signup_facebook_text">Sign Up With Facebook</string>
+
+    <string name="name_hint">Name</string>
+    <string name="password_hint">Password</string>
+    <string name="age_hint">Age</string>
+    <string name="location_hint">Location</string>
+    <string name="phone_hint">Mobile Number</string>
+    <string name="email_hint">Email Address</string>
+    <string name="repeat_email_hint">Repeat Email Address</string>
+
+    <string name="reset_text">Forgot Password? <b>Reset Here</b></string>
+
+    <!-- Bottom Navigation Text -->
+    <string name="title_home">Home</string>
+    <string name="title_shop">Shops</string>
+    <string name="title_market">Market</string>
+    <string name="title_profile">Profile</string>
+    <string name="title_add_item">Add New</string>
+    <string name="title_settings">Settings</string>
+    <string name="title_privacy">Privacy Policy</string>
+    <string name="title_terms">Terms &amp; Conditions</string>
+    <string name="add_vehicle_title">Add New Vehicle</string>
+    <string name="login_title">Sign In To Your Account</string>
+    <string name="register_title">Create A New Account</string>
+    <string name="add_another_title">Add Another Vehicle?</string>
+    <string name="transfer_car_title">Please Confirm Transfer?</string>
+    <string name="add_vehicle_details_title">Add Vehicle Details</string>
+    <string name="add_vehicle_service_title">Add Your Next Service</string>
+    <string name="add_vehicle_supplier_title">Add Preferred Suppliers</string>
+    <string name="profile_subtitle_text">Manage your user account profile.</string>
+    <string name="settings_subtitle_text">Manage your personal app settings.</string>
+    <string name="add_vehicle_supplier_subtitle">VMR will connect you with your preferred supplier.</string>
+    <string name="transfer_car_subtitle">The new owner will see this vehicle added in their VMR App.</string>
+    <string name="market_subtitle_text">Find all the parts you need and sell your unwanted car parts.</string>
+    <string name="add_another_subtitle">Would you like to add another vehicle to your account to manage?</string>
+    <string name="shop_subtitle_text">Discover the best local mechanics to hep you with all your car needs.</string>
+    <string name="home_subtitle_text">Manage your vehicles and keep all your maintenance records up to date.</string>
+
+    <!-- Input Text Hints -->
+    <string name="date_hint">Date</string>
+    <string name="make_hint">Make/Model</string>
+    <string name="price_hint">Price</string>
+    <string name="notes_hint">Add Notes</string>
+    <string name="supplier_hint">Supplier</string>
+    <string name="quantity_hint">Quantity</string>
+    <string name="item_name_hint">Item Name</string>
+    <string name="condition_hint">Condition</string>
+    <string name="company_hint">Service Company</string>
+    <string name="description_hint">Description</string>
+    <string name="service_hint">Service Schedule</string>
+    <string name="category_hint">Search Shop</string>
+    <string name="category_hint1">Search Item name</string>
+    <string name="new_owner_hint">New Owner Name</string>
+    <string name="vehicle_year_hint">Vehicle Year</string>
+    <string name="vehicle_make_hint">Vehicle Make</string>
+    <string name="vehicle_model_hint">Vehicle Model</string>
+    <string name="service_title_hint">Service Title</string>
+    <string name="complete_hint">What was completed?</string>
+    <string name="select_vehicle_hint">Select Vehicle</string>
+    <string name="vehicle_kilometer_hint">Current KMs</string>
+    <string name="vehicle_contact_hint">Contact Number</string>
+    <string name="due_date_hint">Registration Due Date</string>
+    <string name="due_date_hint1">Insurance Due Date</string>
+    <string name="identification_hint">Vehicle VIN Number</string>
+    <string name="vehicle_supplier_hint">PREFERRED REPAIRER</string>
+    <string name="service_choice_hint">Minor/Major Service?</string>
+    <string name="state_choice_hint">Minor/Major Service?</string>
+    <string name="gender">Select gender</string>
+    <string name="state">Select state</string>
+    <string name="maintenance_title_hint">Maintenance Title</string>
+    <string name="registration_hint">Vehicle Registration Number</string>
+
+    <string name="edit_text">Edit</string>
+    <string name="post_text">Post Now</string>
+    <string name="title_view_vehicle">View Vehicle</string>
+    <string name="update_logbook_text">ADD MAINTENANCE RECORD</string>
+    <string name="add_service_text">Add Service Record</string>
+    <string name="title_add_new_record">Add New Record</string>
+    <string name="transfer_vehicle_text">Transfer Vehicle</string>
+    <string name="transfer_ownership_text">Transfer Ownership</string>
+    <string name="add_maintenance_text">ADDITIONAL REPAIRS/PURCHASES</string>
+    <string name="update_maintenance_text">Update Maintenance Record</string>
+    <string name="maintenance_text">Maintenance Record</string>
+    <string name="add_new_record_subtitle_text">Add and update new vehicle maintenance records.</string>
+    <string name="vehicle_transfer_note">Once you have sent this vehicle you cannot retrieve this again.</string>
+    <string name="post_permission_text">I give permission for buyers to be able to contact me on my mobile attached to my profile.</string>
+    <string name="transfer_subtitle_text">Transfer your vehicle to another person on VMR when you sell your car or change ownership.</string>
+    <string name="contact_seller_text">Contact Seller</string>
+    <string name="contact_shop_text">Contact Shop</string>
+    <string name="title_view_shop">View Shop</string>
+    <string name="title_view_item">View Item</string>
+    <string name="location_hard_text">Location</string>
+    <string name="hours_hard_text">Open Hours</string>
+    <string name="services_hard_text">Services</string>
+    <string name="car_info_hard">Car Information</string>
+    <string name="last_service_text">Last Service</string>
+    <string name="car_insurance_hard">Insurance &amp; Registration</string>
+    <string name="registration_date_hard">Registration Date</string>
+    <string name="insurance_date">Insurance Date</string>
+    <string name="history_hard_text">History</string>
+
+    <string name="privacy_text">The following terms and conditions govern all use of the WebsitePolicies.com website and all content, services, and products available through the website, including, but not limited to, the client area (collectively referred to as the Site). The Site is owned and operated by VLD Interactive Inc. (collectively referred to as the Operator). The Site is offered subject to your acceptance without modification of all of the terms and conditions contained herein and all other operating rules, policies including, without limitation, the Operator’s privacy policy and procedures that may be published from time to time on this Site by the Operator (collectively, the “Agreement”). The Site is offered subject to your acceptance without modification of all of the terms and conditions contained herein and all other operating rules, policies including, without limitation, the Operator’s privacy policy and procedures that may be published from time to time on this Site by the Operator (collectively, the “Agreement”). Please read this Agreement carefully before accessing or using the Site. By accessing or using any part of the website, you agree to become bound by the terms and conditions of this agreement. If you do not agree to all the terms and conditions of this agreement, then you may not access the Site or use any services. The Site is available only to individuals who are at least 13 years old. Client area account You are responsible for maintaining the security of your client area account, and you are fully responsible for all activities that occur under the account and any other actions taken in connection with the account. You must immediately notify the Operator of any unauthorized uses of your account or any other breaches of security. The Operator will not be liable for any acts or omissions by You, including any damages of any kind incurred as a result of such acts or omissions. Contribution to the website If you leave comments anywhere on the Site, post material to the Site, post links on the Site, or otherwise make (or allow any third party to make) material available by means of the Site (any such material, “Content”), You are entirely responsible for the content of, and any harm resulting from, that Content. That is the case regardless of whether the Content in question constitutes text, graphics, audio, or computer software. By making Content available, you represent and warrant that: Downloading, copying and use of the Content will not infringe the proprietary rights, including but not limited to the copyright, patent, trademark or trade secret rights, of any third party You have fully complied with any third-party licenses relating to the Content, and have done all things necessary to successfully pass through to end users any required terms The Content does not contain or install any viruses, worms, malware, trojan horses or other harmful or destructive content The Content is not spam, is not machine or randomly-generated, and does not contain unethical or unwanted commercial content designed to drive traffic to third-party sites or boost the search engine rankings of third-party sites, or to further unlawful acts (such as phishing) or mislead recipients as to the source of the material (such as spoofing) The Content is not pornographic, libelous or defamatory, does not contain threats or incite violence towards individuals or entities, and does not violate the privacy or publicity rights of any third party.</string>
+    <string name="replace_hint">Was anything replace?</string>
+    <string name="please_note_text">Please Note</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="send">send</string>
+    <string name="title_add_new_vehicle">ADD NEW VEHICLE</string>
+    <string name="select_membership">SELECT MEMBERSHIP</string>
+    <string name="cardholder_name">Cardholder Name</string>
+    <string name="card_number">Card Number</string>
+    <string name="CVV">CVV</string>
+    <string name="Expiry">Expiry</string>
+
+
+    <string name="facebook_app_id">1133929637439969</string>
+    <string name="fb_login_protocol_scheme">fb1133929637439969</string>
+    <string name="facebook_client_token">16cffd81e64084ca786e141cebf6fe0d</string>
+
+
+</resources>

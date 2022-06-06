@@ -1,0 +1,324 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:overScrollMode="never"
+    tools:context=".activities.vehicle.AddVehicleActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/back_button"
+            android:layout_width="@dimen/_24sdp"
+            android:layout_height="@dimen/_24sdp"
+            android:layout_marginStart="@dimen/_12sdp"
+            android:layout_marginTop="@dimen/_12sdp"
+            android:contentDescription="@null"
+            android:padding="@dimen/_2sdp"
+            android:src="@drawable/ic_back_button"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/logo_image"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/_140sdp"
+            android:layout_marginTop="@dimen/_24sdp"
+            android:adjustViewBounds="true"
+            android:contentDescription="@null"
+            android:src="@drawable/ic_splash_logo"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+
+        <TextView
+            android:id="@+id/title_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_16sdp"
+            android:layout_marginBottom="@dimen/_16sdp"
+            android:fontFamily="@font/ubuntu_medium"
+            android:text="@string/select_membership"
+            android:textAllCaps="true"
+            android:textColor="@color/colorBlack"
+            android:textSize="@dimen/_14ssp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintBottom_toTopOf="@+id/single_car_price"
+            app:layout_constraintTop_toBottomOf="@id/logo_image"
+            app:layout_constraintVertical_bias="1.0" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/single_car_price"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_48sdp"
+            android:layout_marginStart="@dimen/_6sdp"
+            android:layout_marginEnd="@dimen/_6sdp"
+            android:layout_marginBottom="@dimen/_15sdp"
+            android:background="@drawable/timedatebg"
+            android:fontFamily="@font/ubuntu_bold"
+            android:gravity="center"
+            android:padding="@dimen/_15sdp"
+            android:text="1 Car - $5.99/year"
+            android:textColor="@color/colorBlack"
+            android:textSize="@dimen/_15ssp"
+            app:layout_constraintBottom_toTopOf="@id/two_car_price"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/two_car_price"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_48sdp"
+            android:layout_marginStart="@dimen/_6sdp"
+            android:layout_marginEnd="@dimen/_6sdp"
+            android:layout_marginBottom="@dimen/_15sdp"
+            android:background="@drawable/timedatebg"
+            android:fontFamily="@font/ubuntu_bold"
+            android:gravity="center"
+            android:padding="@dimen/_15sdp"
+            android:text="2 Cars - $9.99/year"
+            android:textColor="@color/colorBlack"
+            android:textSize="@dimen/_15ssp"
+            app:layout_constraintBottom_toTopOf="@id/multi_car_price"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/multi_car_price"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_48sdp"
+            android:layout_marginStart="@dimen/_6sdp"
+            android:layout_marginEnd="@dimen/_6sdp"
+            android:layout_marginBottom="@dimen/_15sdp"
+            android:background="@drawable/timedatebg"
+            android:fontFamily="@font/ubuntu_bold"
+            android:gravity="center"
+            android:padding="@dimen/_15sdp"
+            android:text="Unlimited - $14.99/year"
+            android:textColor="@color/colorBlack"
+            android:textSize="@dimen/_15ssp"
+            app:layout_constraintBottom_toTopOf="@id/lipaymentoption"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+
+        <RadioGroup
+            android:gravity="center_vertical"
+            android:id="@+id/lipaymentoption"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_48sdp"
+            android:orientation="horizontal"
+            android:layout_marginStart="@dimen/_6sdp"
+            android:layout_marginEnd="@dimen/_6sdp"
+            android:layout_marginBottom="@dimen/_4sdp"
+            app:layout_constraintBottom_toTopOf="@id/vehicle_identification_input"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            >
+
+            <RadioButton
+                android:id="@+id/radioButton1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text=""
+                android:checked="true"
+                android:drawableRight="@drawable/ic_visa"
+                android:layout_marginTop="20dp"
+                />
+
+            <RadioButton
+                android:layout_marginStart="@dimen/_10sdp"
+                android:id="@+id/radioButton2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="20dp"
+                android:drawableRight="@drawable/ic_mastercard"
+                android:text="" />
+
+
+
+        </RadioGroup>
+
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/vehicle_identification_input"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_6sdp"
+            android:layout_marginEnd="@dimen/_6sdp"
+            android:layout_marginBottom="@dimen/_4sdp"
+            app:boxCornerRadiusBottomEnd="0dp"
+            app:boxCornerRadiusBottomStart="0dp"
+            app:boxCornerRadiusTopEnd="0dp"
+            app:boxCornerRadiusTopStart="0dp"
+            app:boxStrokeColor="@drawable/ic_input_box"
+            app:boxStrokeWidth="@dimen/_1sdp"
+            app:boxStrokeWidthFocused="@dimen/_1sdp"
+            app:errorEnabled="true"
+            app:errorIconTint="@color/colorRed"
+            app:errorTextAppearance="@style/ErrorText"
+            app:hintEnabled="false"
+            app:layout_constraintBottom_toTopOf="@id/card_number_input"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/name_edit"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_48sdp"
+                android:fontFamily="@font/ubuntu_regular"
+                android:hint="@string/cardholder_name"
+                android:inputType="textPersonName"
+                android:textSize="@dimen/_12ssp" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/card_number_input"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_6sdp"
+            android:layout_marginEnd="@dimen/_6sdp"
+            android:layout_marginBottom="@dimen/_4sdp"
+            app:boxCornerRadiusBottomEnd="0dp"
+            app:boxCornerRadiusBottomStart="0dp"
+            app:boxCornerRadiusTopEnd="0dp"
+            app:boxCornerRadiusTopStart="0dp"
+            app:boxStrokeColor="@drawable/ic_input_box"
+            app:boxStrokeWidth="@dimen/_1sdp"
+            app:boxStrokeWidthFocused="@dimen/_1sdp"
+            app:errorEnabled="true"
+            app:errorIconTint="@color/colorRed"
+            app:errorTextAppearance="@style/ErrorText"
+            app:hintEnabled="false"
+            app:layout_constraintBottom_toTopOf="@id/licvvexpiry"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/card_number_edit"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_48sdp"
+                android:fontFamily="@font/ubuntu_regular"
+                android:hint="@string/card_number"
+                android:inputType="number"
+                android:maxLength="19"
+
+                android:textSize="@dimen/_12ssp" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:id="@+id/licvvexpiry"
+            android:layout_marginBottom="@dimen/_4sdp"
+            app:layout_constraintBottom_toTopOf="@id/next_button"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            >
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/expirydate"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/_48sdp"
+                android:layout_marginStart="@dimen/_6sdp"
+                android:layout_marginEnd="@dimen/_6sdp"
+                android:layout_marginBottom="@dimen/_15sdp"
+                android:background="@drawable/timedatebg"
+                android:fontFamily="@font/ubuntu_regular"
+                android:gravity="center_vertical"
+                android:padding="@dimen/_15sdp"
+                android:text="@string/Expiry"
+                android:textColor="@color/colorGray"
+                android:textSize="@dimen/_12ssp" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/carcvv_input"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_6sdp"
+                android:layout_marginEnd="@dimen/_6sdp"
+                android:layout_marginBottom="@dimen/_4sdp"
+                app:boxCornerRadiusBottomEnd="0dp"
+                app:boxCornerRadiusBottomStart="0dp"
+                app:boxCornerRadiusTopEnd="0dp"
+                app:boxCornerRadiusTopStart="0dp"
+                app:boxStrokeColor="@drawable/ic_input_box"
+                app:boxStrokeWidth="@dimen/_1sdp"
+                app:boxStrokeWidthFocused="@dimen/_1sdp"
+                app:errorEnabled="true"
+                app:errorIconTint="@color/colorRed"
+                app:errorTextAppearance="@style/ErrorText"
+                app:hintEnabled="false"
+                app:layout_constraintBottom_toTopOf="@id/next_button"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/carcvv"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_48sdp"
+                    android:fontFamily="@font/ubuntu_regular"
+                    android:hint="@string/CVV"
+                    android:maxLength="3"
+                    android:inputType="number"
+                    android:textSize="@dimen/_12ssp" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+
+        </LinearLayout>
+
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/next_button"
+            style="@style/Widget.MaterialComponents.Button.UnelevatedButton"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/_44sdp"
+            android:layout_marginStart="@dimen/_6sdp"
+            android:layout_marginEnd="@dimen/_6sdp"
+            android:layout_marginBottom="@dimen/_12sdp"
+            android:fontFamily="@font/ubuntu_medium"
+            android:insetTop="0dp"
+            android:insetBottom="0dp"
+            android:text="@string/next_text"
+            android:textSize="@dimen/_14ssp"
+            app:cornerRadius="0dp"
+            app:layout_constraintBottom_toTopOf="@id/copyright_text"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+            android:id="@+id/copyright_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_8sdp"
+            android:fontFamily="@font/ubuntu_regular"
+            android:text="@string/copyright_text"
+            android:textSize="@dimen/_10ssp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.core.widget.NestedScrollView>

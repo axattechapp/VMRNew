@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.auth.ChooseActivity">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/_140sdp"
+        android:layout_marginTop="@dimen/_24sdp"
+        android:adjustViewBounds="true"
+        android:contentDescription="@null"
+        android:src="@drawable/ic_splash_logo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/signup_email_button"
+        style="@style/Widget.MaterialComponents.Button.UnelevatedButton"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/_44sdp"
+        android:layout_marginStart="@dimen/_6sdp"
+        android:layout_marginEnd="@dimen/_6sdp"
+        android:layout_marginBottom="@dimen/_12sdp"
+        android:fontFamily="@font/ubuntu_medium"
+        android:insetTop="0dp"
+        android:insetBottom="0dp"
+        android:text="@string/signup_email_text"
+        android:textSize="@dimen/_14ssp"
+        app:cornerRadius="0dp"
+        app:layout_constraintBottom_toTopOf="@id/signup_facebook_button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/signup_facebook_button"
+        style="@style/Widget.MaterialComponents.Button.UnelevatedButton"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/_44sdp"
+        android:layout_marginStart="@dimen/_6sdp"
+        android:layout_marginEnd="@dimen/_6sdp"
+        android:layout_marginBottom="@dimen/_12sdp"
+        android:fontFamily="@font/ubuntu_medium"
+        android:insetTop="0dp"
+        android:insetBottom="0dp"
+        android:text="@string/signup_facebook_text"
+        android:textSize="@dimen/_14ssp"
+        app:backgroundTint="@color/colorBlue"
+        app:cornerRadius="0dp"
+        app:layout_constraintBottom_toTopOf="@id/copyright_text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+
+
+    <TextView
+        android:id="@+id/copyright_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/_8sdp"
+        android:fontFamily="@font/ubuntu_regular"
+        android:text="@string/copyright_text"
+        android:textSize="@dimen/_10ssp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
